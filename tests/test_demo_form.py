@@ -2,8 +2,8 @@ from selene import browser, have
 import os
 
 
-def test_demo_form():
-    browser.open('https://demoqa.com/automation-practice-form')
+def test_demo_form(browser_management):
+    browser.open('/automation-practice-form')
 
     browser.element('#firstName').type('Mira')
     browser.element('#lastName').type('Gorte')
